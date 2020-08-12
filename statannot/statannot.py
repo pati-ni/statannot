@@ -385,7 +385,7 @@ def add_stat_annotation(ax, plot='boxplot',
     )
     assert_is_in(
         text_format,
-        ['full', 'simple', 'star'],
+        ['full', 'simple', 'star', 'custom'],
         label='argument `text_format`'
     )
     assert_is_in(
