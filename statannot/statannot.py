@@ -557,6 +557,8 @@ def add_stat_annotation(ax, plot='boxplot',
             elif text_format is 'simple':
                 test_short_name = show_test_name and test_short_name or ""
                 text = simple_text(result.pval, simple_format_string, pvalue_thresholds, test_short_name)
+            elif text_format is 'custom':
+                text = "%0.2f" % result.pval
 
         yref = ymax_in_range_x1_x2
         yref2 = yref
